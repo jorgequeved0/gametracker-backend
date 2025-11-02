@@ -1,6 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+// Conenctar rutas
+const rutasJuegos = require('./rutas/juegos');
+const rutasReviews = require('./rutas/reviews');
+app.use('/api/juegos', rutasJuegos);
+app.use('/api/reviews', rutasReviews);
+
 const app = express();
 app.use(express.json());
 
