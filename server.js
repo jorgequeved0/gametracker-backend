@@ -1,14 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+const app = express();
+app.use(express.json());
+
 // Conenctar rutas
 const rutasJuegos = require('./rutas/juegos');
 const rutasReviews = require('./rutas/reviews');
 app.use('/api/juegos', rutasJuegos);
 app.use('/api/reviews', rutasReviews);
-
-const app = express();
-app.use(express.json());
 
 const MONGO_URI = 'mongodb+srv://jacobogarcesoquendo:aFJzVMGN3o7fA38A@cluster0.mqwbn.mongodb.net/JorgeQuevedoCaballero';
 const PUERTO = 3000;
