@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors());
-app.use(express.json());Con re
+app.use(express.json());
 
 // Conenctar rutas
 const rutasJuegos = require('./rutas/juegos');
