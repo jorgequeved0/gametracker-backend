@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Juego = require('../modelos/Juego');
-const Review = require('../modelos/Review');
 
 // Metodo Get
 router.get('/', async (req, res) => {
